@@ -1,0 +1,11 @@
+<div style="height: 100px;">
+<form #n="ngForm" (ngSubmit)="onSubmit(n.value)">
+    <span>Task: </span><input type="text" name="task" [(ngModel)]="task">
+    <br>
+    <br>
+    <span>Completed: </span><input type="checkbox" name="isCompleted" [(ngModel)]="isCompleted">
+    <br>
+    <br>    
+    <button type="submit" >Save</button>
+</form>
+</div>
